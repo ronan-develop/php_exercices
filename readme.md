@@ -16,7 +16,6 @@ $color = ['white', 'green', 'red', 'blue', 'black'];
 #Output :
 green, red, white
 ```
-```php
 $color = array('white', 'green', 'red')
 
 3. Create a PHP script which displays the capital and country name from the above

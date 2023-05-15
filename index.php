@@ -5,10 +5,9 @@
 $color = ['white', 'green', 'red', 'blue', 'black'];
 echo "
 The memory of that scene for me is like a frame of film forever frozen at that moment:
-   the $color[2] carpet, the $color[1] lawn, the $color[0] house, the leaden sky. The new 
-president and 
-   his first lady. - Richard M. Nixon
-";
+the $color[2] carpet, the $color[1] lawn, the $color[0] house, the leaden sky. The new 
+president and his first lady. - Richard M. Nixon
+\n";
 /**
  * Exercice 2
  */
@@ -17,6 +16,7 @@ sort($color);
 foreach ($color as $y){
     echo $y . ", ";
 }
+echo "\n\n";
 /**
  * Exercice 3
  */
@@ -40,10 +40,10 @@ $ceu = [
     "Cyprus"=>"Nicosia",
     "Lithuania"=>"Vilnius",
     "Czech Republic"=>"Prague",
-    "Estonia"=>"Tallin",
+    "Estonia"=>"Tallinn",
     "Hungary"=>"Budapest",
     "Latvia"=>"Riga",
-    "Malta"=>"Valetta",
+    "Malta"=>"Valletta",
     "Austria" => "Vienna",
     "Poland"=>"Warsaw"
 ];
@@ -51,4 +51,11 @@ asort($ceu);
 foreach ($ceu as $k => $c){
     echo "The capital of " . $k . " is " . $c . "\n";
 }
-// sort array by value
+echo "\n\n";
+/**
+ * Exercice 4
+ */
+$x = [1, 2, 3, 4, 5];
+unset($x[3]);
+if($x[3])
+print_r(array_change_key_case($x));
