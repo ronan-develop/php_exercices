@@ -9,3 +9,11 @@ The memory of that scene for me is like a frame of film forever frozen at that m
 president and 
    his first lady. - Richard M. Nixon
 ";
+/**
+ * Exercice 2
+ */
+$color = ['white', 'green', 'red'];
+sort($color);
+foreach ($color as $y){
+    echo $y . ", ";
+}
