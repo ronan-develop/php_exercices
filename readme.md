@@ -72,6 +72,15 @@ array(4) { [0]=> int(1) [1]=> int(2) [2]=> int(3) [3]=> int(5) }
 493193  -->  4 + 9 + 3 + 1 + 9 + 3 = 29  -->  2 + 9 = 11  -->  1 + 1 = 2
 ```
 
+6. Our football team has finished the championship. Our team's match results are recorded 
+   in a collection of strings. Each match is represented by a string in the format "x:y",
+   where x is our team's score and y is our opponents score 
+   For example: ["3:1", "2:2", "0:1", ...]
+   Points are awarded for each match as follows:
+   if x > y: 3 points (win)
+   if x < y: 0 points (loss)
+   if x = y: 1 point (tie)
+
 
 
 [//]: # (https://www.w3resource.com/php-exercises/php-array-exercises.php)
