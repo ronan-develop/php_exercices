@@ -2,7 +2,7 @@
 
 1. Write a script which will display the following string :
    "The memory of that scene for me is like a frame of film forever frozen at that moment:
-   the red carpet, the green lawn, the white house, the leaden sky. The new president and 
+   the red carpet, the green lawn, the White House, the leaden sky. The new president and 
    his first lady. - Richard M. Nixon"
    and the words 'red', 'green' and 'white' will come from $color.
 ```php
@@ -41,10 +41,10 @@ $ceu = [
     "Cyprus"=>"Nicosia",
     "Lithuania"=>"Vilnius",
     "Czech Republic"=>"Prague",
-    "Estonia"=>"Tallin",
+    "Estonia"=>"Tallinn",
     "Hungary"=>"Budapest",
     "Latvia"=>"Riga",
-    "Malta"=>"Valetta",
+    "Malta"=>"Valletta",
     "Austria" => "Vienna",
     "Poland"=>"Warsaw"
  ];

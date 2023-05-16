@@ -1,6 +1,7 @@
 <?php
 /**
  * Exercice 1
+ * POSITION
  */
 $color = ['white', 'green', 'red', 'blue', 'black'];
 echo "
@@ -10,6 +11,7 @@ president and his first lady. - Richard M. Nixon
 \n";
 /**
  * Exercice 2
+ * BASIC SORT
  */
 $color = ['white', 'green', 'red'];
 sort($color);
@@ -19,6 +21,7 @@ foreach ($color as $y){
 echo "\n\n";
 /**
  * Exercice 3
+ * FILTER BY VALUE
  */
 $ceu = [
     "Italy"=>"Rome",
@@ -57,5 +60,5 @@ echo "\n\n";
  */
 $x = [1, 2, 3, 4, 5];
 unset($x[3]);
-if($x[3])
-print_r(array_change_key_case($x));
+$x = array_values($x);
+print_r($x);
