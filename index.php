@@ -61,13 +61,12 @@ echo "\n\n";
 $x = [1, 2, 3, 4, 5];
 unset($x[3]);
 $x = array_values($x);
-//print_r($x);
+print_r($x);
 /**
  * Exercice 7
  * Morse code
  */
-//    array_walk_recursive();
-function decode_morse(string $code): void{
+function decode_morse(string $code): string{
     $codex = [
         "a"=>".-",
         "b"=>"-...",
@@ -111,18 +110,22 @@ function decode_morse(string $code): void{
         "/"=>"-..-.",
         " " => ""
     ];
-    $trad = [];
+    $trad = "";
 // identifier les mots
     $morse_array = explode("   ", $code);
     foreach ($morse_array as $item) {
+
         $word = explode(' ', $item);
+
         foreach ($word as $letter) {
             if (in_array($letter, $codex)) {
-                $trad[] = array_search($letter, $codex) . " ";
+                $trad = $trad . "" . array_search($letter, $codex);
             }
         }
+// ajout espace entre les mots
+        $trad = $trad . " ";
     }
-    echo implode('', $trad);
+    return strtoupper(trim($trad));
 }
 
 decode_morse('.... . -.--   .--- ..- -.. .');
