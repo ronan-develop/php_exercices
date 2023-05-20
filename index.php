@@ -61,4 +61,68 @@ echo "\n\n";
 $x = [1, 2, 3, 4, 5];
 unset($x[3]);
 $x = array_values($x);
-print_r($x);
+//print_r($x);
+/**
+ * Exercice 7
+ * Morse code
+ */
+//    array_walk_recursive();
+function decode_morse(string $code): void{
+    $codex = [
+        "a"=>".-",
+        "b"=>"-...",
+        "c"=>"-.-.",
+        "d"=>"-..",
+        "e"=>".",
+        "f"=>"..-.",
+        "g"=>"--.",
+        "h"=>"....",
+        "i"=>"..",
+        "j"=>".---",
+        "k"=>"-.-",
+        "l"=>".-..",
+        "m"=>"--",
+        "n"=>"-.",
+        "o"=>"---",
+        "p"=>".--.",
+        "q"=>"--.-",
+        "r"=>".-.",
+        "s"=>"...",
+        "t"=>"-",
+        "u"=>"..-",
+        "v"=>"...-",
+        "w"=>".--",
+        "x"=>"-..-",
+        "y"=>"-.--",
+        "z"=>"--..",
+        "0"=>"-----",
+        "1"=>".----",
+        "2"=>"..---",
+        "3"=>"...--",
+        "4"=>"....-",
+        "5"=>".....",
+        "6"=>"-....",
+        "7"=>"--...",
+        "8"=>"---..",
+        "9"=>"----.",
+        "."=>".-.-.-",
+        ","=>"--..--",
+        "?"=>"..--..",
+        "/"=>"-..-.",
+        " " => ""
+    ];
+    $trad = [];
+// identifier les mots
+    $morse_array = explode("   ", $code);
+    foreach ($morse_array as $item) {
+        $word = explode(' ', $item);
+        foreach ($word as $letter) {
+            if (in_array($letter, $codex)) {
+                $trad[] = array_search($letter, $codex) . " ";
+            }
+        }
+    }
+    echo implode('', $trad);
+}
+
+decode_morse('.... . -.--   .--- ..- -.. .');
