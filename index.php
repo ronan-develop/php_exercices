@@ -107,8 +107,10 @@ function decode_morse(string $code): string{
         "."=>".-.-.-",
         ","=>"--..--",
         "?"=>"..--..",
+        "!"=>"−·−·−−",
         "/"=>"-..-.",
-        " " => ""
+        " " => "",
+        "SOS"=>"···−−−···"
     ];
     $trad = "";
 // identifier les mots
