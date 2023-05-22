@@ -131,3 +131,12 @@ function decode_morse(string $code): string{
 }
 
 decode_morse('.... . -.--   .--- ..- -.. .');
+
+/**
+ * Exercice 8
+ */
+function solution($str) {
+    return $str === "" ? [] : str_split(
+        strlen($str) % 2 === 0 ? $str : $str . '_', 2
+    );
+}
